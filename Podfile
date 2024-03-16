@@ -9,3 +9,6 @@ workspace 'ModuleExampleWorkspace'
 
 target 'ModuleExample' do
 end
+
+target 'ModuleExampleRun' do
+end

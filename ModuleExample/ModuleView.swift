@@ -22,6 +22,3 @@ struct ModuleView: View {
     }
 }
 
-#Preview {
-    ModuleView()
-}
