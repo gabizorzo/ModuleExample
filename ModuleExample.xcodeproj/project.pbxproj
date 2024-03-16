@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2379A72D2BA649B90071392B /* ModuleExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 2379A72C2BA649B90071392B /* ModuleExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2379A7322BA649D80071392B /* Pods_ModuleExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2379A7312BA649D80071392B /* Pods_ModuleExample.framework */; };
 		2379A73C2BA64A7A0071392B /* ModuleExampleRunApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2379A73B2BA64A7A0071392B /* ModuleExampleRunApp.swift */; };
 		2379A73E2BA64A7A0071392B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2379A73D2BA64A7A0071392B /* ContentView.swift */; };
@@ -16,8 +15,8 @@
 		2379A7472BA64AE10071392B /* ModuleExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2379A72A2BA649B90071392B /* ModuleExample.framework */; };
 		2379A7482BA64AE10071392B /* ModuleExample.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2379A72A2BA649B90071392B /* ModuleExample.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2379A74E2BA64AE50071392B /* Pods_ModuleExample.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2379A74C2BA64AE50071392B /* Pods_ModuleExample.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2379A7502BA64DB00071392B /* ModuleExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2379A7152BA63ECD0071392B /* ModuleExampleApp.swift */; };
-		2379A7512BA64DB00071392B /* ModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2379A7172BA63ECD0071392B /* ModuleView.swift */; };
+		2379A77B2BA652E30071392B /* ModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2379A7172BA63ECD0071392B /* ModuleView.swift */; };
+		2379A77C2BA652E70071392B /* ModuleExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2379A7152BA63ECD0071392B /* ModuleExampleApp.swift */; };
 		B6E6369F50F559F7EE7BE985 /* Pods_ModuleExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2379A74C2BA64AE50071392B /* Pods_ModuleExample.framework */; };
 		BBE3582F23F01ECC0719A8BB /* Pods_ModuleExampleRun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 731E7E80642EAA209B74DDAE /* Pods_ModuleExampleRun.framework */; };
 /* End PBXBuildFile section */
@@ -55,7 +54,6 @@
 		2379A71C2BA63ECF0071392B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2379A7232BA6417C0071392B /* ModuleExample.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ModuleExample.podspec; sourceTree = "<group>"; };
 		2379A72A2BA649B90071392B /* ModuleExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ModuleExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2379A72C2BA649B90071392B /* ModuleExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleExample.h; sourceTree = "<group>"; };
 		2379A7312BA649D80071392B /* Pods_ModuleExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_ModuleExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2379A7392BA64A7A0071392B /* ModuleExampleRun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModuleExampleRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2379A73B2BA64A7A0071392B /* ModuleExampleRunApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleExampleRunApp.swift; sourceTree = "<group>"; };
@@ -107,7 +105,6 @@
 			children = (
 				2379A7232BA6417C0071392B /* ModuleExample.podspec */,
 				2379A7142BA63ECD0071392B /* ModuleExample */,
-				2379A72B2BA649B90071392B /* ModuleExample */,
 				2379A73A2BA64A7A0071392B /* ModuleExampleRun */,
 				2379A7132BA63ECD0071392B /* Products */,
 				161067058EBEB4FF93E8CF80 /* Pods */,
@@ -142,14 +139,6 @@
 				2379A71C2BA63ECF0071392B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		2379A72B2BA649B90071392B /* ModuleExample */ = {
-			isa = PBXGroup;
-			children = (
-				2379A72C2BA649B90071392B /* ModuleExample.h */,
-			);
-			path = ModuleExample;
 			sourceTree = "<group>";
 		};
 		2379A73A2BA64A7A0071392B /* ModuleExampleRun */ = {
@@ -195,7 +184,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2379A72D2BA649B90071392B /* ModuleExample.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +337,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2379A77C2BA652E70071392B /* ModuleExampleApp.swift in Sources */,
+				2379A77B2BA652E30071392B /* ModuleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,10 +346,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2379A7512BA64DB00071392B /* ModuleView.swift in Sources */,
 				2379A73E2BA64A7A0071392B /* ContentView.swift in Sources */,
 				2379A73C2BA64A7A0071392B /* ModuleExampleRunApp.swift in Sources */,
-				2379A7502BA64DB00071392B /* ModuleExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,6 +553,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 21ED9FC2E2617DA1985EC025 /* Pods-ModuleExampleRun.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -595,6 +584,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B93AB883835513F14680387C /* Pods-ModuleExampleRun.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;

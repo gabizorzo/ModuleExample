@@ -7,8 +7,9 @@
 
 import SwiftUI
 
-struct ModuleView: View {
-    var body: some View {
+public struct ModuleView: View {
+    public init() {}
+    public var body: some View {
         ZStack {
             Color(.black)
             
