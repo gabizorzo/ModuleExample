@@ -17,5 +17,8 @@ Pod::Spec.new do |s|
       "#{s.module_name}/**/*.{swift}"
   ]
   #s.source_files = 'ModuleExample/**/*.{swift}'
+  
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386 arm64'}
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386 arm64'}
 
 end
