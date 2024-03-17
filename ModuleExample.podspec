@@ -13,6 +13,9 @@ Pod::Spec.new do |s|
   s.cocoapods_version = '>= 1.5'
   s.swift_version = '5.0'
 
-  s.source_files = 'ModuleExample/**/*.{swift}'
+  s.source_files = [
+      "#{s.module_name}/**/*.{swift}"
+  ]
+  #s.source_files = 'ModuleExample/**/*.{swift}'
 
 end
